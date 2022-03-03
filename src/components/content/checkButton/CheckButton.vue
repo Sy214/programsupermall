@@ -1,0 +1,27 @@
+<template>
+  <div class="check-button" :class="{check:isChecked}">
+    <img src="../../../assets/img/shop.jfif" alt="">
+  </div>
+</template>
+<script>
+export default {
+  name:'CheckButton',
+  props:{
+    isChecked: {
+      type:Boolean,
+      default:false
+    }
+  }
+}
+</script>
+<style scoped>
+ .check-button {
+   background-color: pink;
+   border-radius: 50%;
+  }
+ .check {
+   border: 2px solid #aaa;
+
+   border-color: pink;
+ }
+</style>
